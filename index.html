@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto Mono"
+      rel="stylesheet"
+    />
+    <style>
+      canvas {
+        width: 800px;
+        height: 600px;
+        border: 1px solid black;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app"></div>
+    <div id="chat-window"></div>
+    <canvas width="800" height="600" id="game_window"></canvas>
+    <div
+      style="
+        gap: 10px;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(10px);
+        height: 600px;
+        width: 800px;
+      "
+      class="center"
+      id="start-menu"
+    >
+      <div>
+        <h1>LUIS_GAR.IO</h1>
+        <input id="nameInput" value="Player" type="text" />
+        <button id="joinButton" style="cursor: pointer">Join game</button>
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
